@@ -7,11 +7,13 @@
 .rd-container {
   display: none;
   /*border: 1px solid #333;*/
-  background-color: #3E8DDD;
+  background-color: #fff;
   padding: 10px;
   text-align: center;
-  color: #fff;
-  box-shadow: 0 15px 30px 0 rgba(0,0,0,.2);
+  border: 1px #0D6EFD solid;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
 
 }
 .rd-container-attachment {
@@ -57,22 +59,22 @@
   cursor: pointer;
   text-align: center;
   /* new */
-  width: 49px;
-  height: 49px;
-  text-align: center;
+  line-height: 0;
+  width: 42px!important;
+  height: 42px!important;
 }
 .rd-day-selected,
 .rd-time-selected,
 .rd-time-option:hover {
   cursor: pointer;
-  background-color: #0e345a;
+  background-color: #0D6EFD;
   color: #fff;
   /* new */
-  border-radius: 50%;
+  border-radius: 60%;
 }
 .rd-day-prev-month,
 .rd-day-next-month {
-  color: rgb(65, 65, 65);;
+  color: #ccc;
 }
 .rd-day-disabled {
   cursor: default;

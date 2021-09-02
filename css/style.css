@@ -15,14 +15,10 @@ body
     min-width: 120px;
     border-bottom: 1pc #E32826 solid;
 }
-.logo_wrapper
-{
-    
-}
 .navbar
 {
     border-bottom:1px black solid;
-    padding:0px;
+    padding:0px;    
 }
 .navbar .container-fluid 
 {
@@ -42,114 +38,38 @@ body
 {
     background:#fff;    
 }
-.ccititle {
-    background: #3E8DDD;
-    padding: 5% 5% 0.5% 5%;
+.adminmaintitle {
     font-family: 'Lato', sans-serif;    
 }
-.ccititle h1
+.adminmaintitle h2
 {
-    font-weight: 100;
-    color:white;
-}
-.cciconatiner {
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    padding: 5% 5% 3% 5%;
-}
-.cciconatiner dt
-{
-    font-weight:bold;
+    font-weight: 300;
     color:#333333;
 }
-.cciconatiner dd
+.cardbox
 {
-    font-size:20px;
-    font-weight:400;
-    color:#666666;
-    padding-bottom:2%;
-}
-.cciconatiner dd ul.list-group .list-group-item
-{
-    border:0px;
-    padding-left:0px;
-    color:#666666;
-}
-.cciconatiner dd ul.list-group .list-group-item b
-{
-    padding-right:10px;    
-}
-.cciconatiner dd ul.list-group .list-group-item
-{
-    padding-left:5%;    
-}
-.cciconatiner dd ul.list-group li.closed
-{
-    background:red;
-    padding-left:5%;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-    color:white;
-}
-#login_right_panel .nav-item {
-    width: 50%;
-    text-align: center;
-    background: #3E8DDD;    
-    
-}
-#login_right_panel .nav-item .nav-link
-{
-    font-weight:400;
-    font-size:23px;    
-    color:white;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    cursor: pointer;
-    border-top:1px #E7E7E7 solid;
-    border-left:1px #E7E7E7 solid;
-    border-right:1px #E7E7E7 solid;
-    border-bottom:0px;
-}
-#login_right_panel .nav-item .active
-{
-    color:#666666;
-    border-bottom:1px #fff solid;
-}
-#login_right_panel .tab-content {
+    background: white;
+    padding: 4% 7%;
     border: 1px #E7E7E7 solid;
-    border-top: 0px;
 }
-#login_right_panel .right_wrapper
-{
-    padding:5%;
-}
-#login_right_panel .right_wrapper .rtitle 
+.adminsubtitle
 {
     border-bottom:1px #C7C7C7 solid;
-    height:33.5px;
+    height:32px;
+    margin: 4% 0%;
 }
-#login_right_panel .right_wrapper .rtitle h3
+.adminsubtitle h4
 {
-    font-size:22px;
+    font-size:20px;
     color:#3E8DDD;
     text-decoration:underline;
     text-decoration-thickness: 3px;  
     text-underline-offset: 0.4em
 }
-#login_right_panel .right_container
-{
-    padding-top:5%;
-}
 input
 {
     padding:3% !important;
     border:1px red solid;
-}
-.form-check
-{
-    
 }
 .form-check-input {
     padding: 0 !important;
@@ -159,237 +79,169 @@ input
 {
     padding:1% 0 0 2%;
 }
+/* Style navigation menu links */
+#navbarSupportedContent a {
+    color: gray;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  #navbarSupportedContent a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  #navbarSupportedContent a:hover {
+    color:#0D6EFD;
+  }
+  .navbar-light .navbar-toggler
+  {
+      border: 0px;
+  }
 
-.btn-cci {
-    background: #3E8DDD;
-    color: white;
-}
-.lnk-btn-cci
-{
-    text-decoration:none;
-}
-#login_right_panel .right_container .d-flex small
-{
-    padding-top:4px;    
-}
-#loginpage .modal-footer
-{
-    justify-content:center;
-    border-top: 0px;
-}
-#loginpage .modal-header
-{
-    border-bottom: 0px;
-}
-.sm-icons {
-    flex-direction: row;
-  }
-  @media only screen and (max-width: 960px) {
-    .sm-icons .nav-item {
-      padding-right: 1em;
-    }
-  }
-h3.cciname
+  #navbar_top li.active
   {
-    color: #3E8DDD;
+      border-bottom: 2px #0D6EFD solid;
   }
-  .text-right
+  #navbar_top li.active a
   {
-      text-align: right;
+      color: #0D6EFD;
   }
-  #dashboard .btn-link
+  #navbar_top li:hover
+  {
+      border-bottom: 2px #0D6EFD solid;
+  }
+  #navbar_top li a:hover
+  {
+      color: #0D6EFD;
+  }
+  .adminmaintitle h3
+  {
+      font-weight: 400;
+      margin-bottom: 0px !important;      
+  }
+  .adminmaintitle .titlemsg
+  {
+      font-size: 13px;
+      color: #666666;
+  }
+  .pagesubtitle
+  {
+      border-bottom: 1px #E2E7EE solid;
+  }
+  .pagesubtitle h3
+  {
+    font-size:15px;
+    color:black;
+    font-weight: bold;
+    text-decoration:underline;
+    text-decoration-thickness: 3px;  
+    text-underline-offset: 0.6em;
+    text-decoration-color:#0D6EFD;
+  }
+  .dashboardcards .card
+  {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+  }
+  .dashboardcards .card h5
+  {
+      font-size: 15px;
+  }
+  .dashboardcards .card h2
+  {
+      font-size: 32px;
+      font-weight: bolder;
+  }
+  .dashboardcards .card1
+  {
+      color: black;
+  }
+  .dashboardcards .card2
+  {
+      color: #6AC346;
+  }
+  .dashboardcards .card3
+  {
+      color: #F35162;
+  }
+  .dashboardcards .card4
+  {
+      color: #666666;
+  }
+  a.text-underlinenone
   {
       text-decoration: none;
+      font-weight: bold;
   }
-  #dashboard a.btn-link i 
+  .adminportaltable
   {
-      padding-left: 10px;
+      background: #fff;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      --bs-table-hover-color: #fff;
+      --bs-table-hover-bg: #3E8DDD;
+      font-size: 14px;      
   }
-  #timeslottable .table .thead-dark th {
-    color: #fff;
-    background-color: #212529;
-    border-color: #32383e;
-    padding-top: 2%;
+  .adminportaltable span.table-status-ongoing
+  {
+      color: #FF8800;
   }
-#timeslottable .table .thead-dark th, td {
-    text-align: center;
-}
-#timeslottable .table th p {
-    font-size: 13px;
-    font-weight: lighter;
-}
-#timeslottable .table tbody, td, tfoot, th, thead, tr {
-    border: 0px !important;
-}
-#timeslottable .table tbody, td {
-    padding: 2% !important;
-}
-#timeslottable .table tbody td:hover {
-        background: #3E8DDD !important;
-        color: white;
+  .adminportaltable span.table-status-completed
+  {
+      color: #6AC346;
+  }
+  .chartbox
+  {
+      background: #fff;
+      padding: 20px 10px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+  }
+  .chartbox h4
+  {
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 8px;
+  }
+  .chartbox span
+  {
+      font-size: 12px;
+      color: #7C828A;
+  }
+@media (min-width: 250px)
+{
+    .logo_wrapper 
+    {
+        width: 152px;
+        padding-top: 1px;
+        
     }
-#timeslottable .table tbody td span {
-        background: #E1140A;
-        color: white;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        border-radius: 50px;
-        padding: 5px 15px 5px 15px;
+    .logo_wrapper .navbar-brand
+    {
+        border-bottom: 0 !important;
     }
-  .card dl {
-    margin-bottom:0px !important;
-    padding-top:5px;
-  }
-  .ccidateconfirm {
-  
-  font-family: 'Lato', sans-serif;
-  }
-  .ccidateconfirm h1 {
-        font-weight: 300;
-  }
-.btn-success {
-    background: #6AC346;
-    border:0px;
-}
-.popuptable tbody td
-{
-    text-align:left;
-    padding-left:8px !important;
-}
-.popuptable tr
-{
-    border-top:1px red solid;
-}
-.selectsingledaytime tr td
-{
-    font-size: 10px !important;    
-}
-.selectsingledaytime tr td:hover
-{
-    font-size: 10px !important; 
-    background: #3E8DDD;
-    color: #fff;   
 }
 @media (min-width: 350px)
 {
-    input#phone {
-        padding-left: 16% !important;
-    }  
-    .popuptable
+    .logo_wrapper 
     {
-        font-size: 10px;
+        all: unset !important;
     }
 }
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { 
-    input#phone {
-        padding-left: 11% !important;
-    }
-    .popuptable
-    {
-        font-size: 17px;
-    }
-    #login_right_panel .right_wrapper .rtitle h3
-    {
-        font-size:22px;
-        color:#3E8DDD;
-        text-decoration:underline;
-        text-decoration-thickness: 3px;  
-        text-underline-offset: 0.4em
-    }
- }
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px)  { 
-    input#phone {
-        padding-left: 16% !important;
-    }
-    #login_right_panel .right_wrapper .rtitle h3
-    {
-        font-size:22px;
-        color:#3E8DDD;
-        text-decoration:underline;
-        text-decoration-thickness: 3px;  
-        text-underline-offset: 0.4em
-    }
-    
-    #login_left_panel .fontres
-    {
-        font-size: 15px;        
-    }
-    .selecttimetable h5
-    {
-        font-size: 15px;
-        
-    }
-    .selecttimetable p
-    {
-        font-size: 10px !important;        
-    }
-    #timeslottable .table tbody td span {
-        background: #E1140A;
-        color: white;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        border-radius: 10px;
-        padding: 2px 10px;
-        font-size: 10px;
-    }
- }
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { 
-    input#phone {
-        padding-left: 10% !important;
-    }
-    #login_right_panel .right_wrapper .rtitle h3
-    {
-        font-size:22px;
-        color:#3E8DDD;
-        text-decoration:underline;
-        text-decoration-thickness: 3px;  
-        text-underline-offset: 0.4em
-    }    
-    
-
-/* X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { 
-    #login_left_panel .fontres
-    {
-        font-size: 20px;        
-    }
- }
-
-/* XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) { ... }
-
-
-
-
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-    input #phone {
-        padding-left: 10% !important;        
-    }
-    #login_right_panel .right_wrapper .rtitle h3
-    {
-        font-size:22px;
-        color:#3E8DDD;
-        text-decoration:underline;
-        text-decoration-thickness: 3px;  
-        text-underline-offset: 0.4em
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1366px)
+@media (max-width: 575.98px)
 {
-    input#phone {
-        padding-left: 16% !important;
+    .table-responsive table {
+        min-width: 800px;
     }
-}
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
-{
-    input#phone {
-        padding-left: 16% !important;
-    }
-    
 }

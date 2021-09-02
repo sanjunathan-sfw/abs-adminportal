@@ -1,5 +1,5 @@
 $(function() {
 
-  rome(input, { time: false });
+  rome(inline_cal, { time: false });
 
 });
