@@ -20,11 +20,11 @@ body
     border-bottom:1px black solid;
     padding:0px;    
 }
-.navbar .container-fluid 
+.navbar .container
 {
     padding-left: var(--bs-gutter-x,.0rem);
 }
-.navbar .container-fluid .img-fluid
+.navbar .container .img-fluid
 {
     width:80%;
 }
@@ -69,7 +69,7 @@ body
 input
 {
     padding:3% !important;
-    border:1px red solid;
+    
 }
 .form-check-input {
     padding: 0 !important;
@@ -219,6 +219,47 @@ input
       font-size: 12px;
       color: #7C828A;
   }
+  .commonradius
+  {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+  }
+  #bookinglistpage h3.title
+  {
+      font-weight: 600;
+      color: #3E8DDD;      
+      font-size: 20px;
+      margin: 15px 0;
+  }
+  h3.lighttitle
+  {
+      font-weight: 300;
+  }
+  .tabstitle .nav-tabs
+  {
+      border-bottom: 0px  !important;
+  }
+  .tabstitle a.active
+  {
+    font-size: 15px;
+    color: black !important;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 0.9em;
+    text-decoration-color: #0D6EFD;
+    border: 0 !important;
+    background: none !important;
+
+  }
+  .tabstitle a
+  {
+      color: #BBC5D5 !important;
+      font-weight: bold;
+      transition: none !important;  
+  }  
+ 
 @media (min-width: 250px)
 {
     .logo_wrapper 
@@ -238,10 +279,46 @@ input
     {
         all: unset !important;
     }
+    input#phone {
+        padding-left: 16% !important;
+    }
 }
 @media (max-width: 575.98px)
 {
     .table-responsive table {
         min-width: 800px;
     }
+    input#phone {
+        padding-left: 11% !important;
+    }
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px)  { 
+    input#phone {
+        padding-left: 16% !important;
+    }
+}
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    input#phone {
+        padding-left: 10% !important;
+    }
+}
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    input #phone {
+        padding-left: 10% !important;        
+    }
+}
+@media (min-width: 1024px) and (max-width: 1366px)
+{
+    input#phone {
+        padding-left: 16% !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+{
+    input#phone {
+        padding-left: 16% !important;
+    }
+    
 }

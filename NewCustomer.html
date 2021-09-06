@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <title>My account | Lenovo India -Sanjunathan</title>
+    <link rel="shortcut icon" type="image/x-icon" media="all" href="images/favicon.ico" />
+    <meta name="description" content="Login/Register">
+    <meta name="author" content="Lenovo">
+    <link rel="stylesheet" href="css/fontawesome/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fonts.css" /> 
+    <link rel="stylesheet" href="css/calender/rome.css"> 
+    <link rel="stylesheet" href="css/phoneflag/intlTelInput.css" />
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="">
+            <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <div class="logo_wrapper">
+                        <div>
+                            <a class="navbar-brand" href="#">
+                                <img src="images/logo.png" class="img-fluid"/>
+                            </a>
+                        </div>
+                    </div>                      
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item ">
+                                <a class="nav-link" aria-current="page" href="#">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Booking list</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">New customer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Book appointments</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Configuration settings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Logout</a>
+                            </li>
+                        </ul>                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row no-gutters pt-5">
+                <div class="col-lg-9 col-sm-12">
+                    <div class="dashboardcards">
+                        <div class="pagesubtitle pt-3">
+                            <div class="">
+                                <div class="tabstitle">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link active " id="Mobile-number" data-bs-toggle="tab" href="#Mobilenumber" role="tab" aria-controls="Mobilenumber" aria-selected="true">Mobile number</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="Verification-code" data-bs-toggle="tab" href="#Verificationcode" role="tab" aria-controls="Verificationcode" aria-selected="false">Verification code</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="Personal-information" data-bs-toggle="tab" href="#Personalinformation" role="tab" aria-controls="Verificationcode" aria-selected="false">Personal information</a>
+                                        </li>
+                                    </ul>                                                                            
+                                </div>                                
+                            </div>
+                        </div> 
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="Mobilenumber" role="tabpanel" aria-labelledby="Mobile-number">
+                                <div class="offset-lg-3 offset-md-2 col-lg-6 col-md-8 bg-white commonradius mt-5">
+                                    <div class="p-4">
+                                        <div class="mb-3">
+                                            <input id="phone" name="phone" type="tel" class="form-control" />
+                                        </div>
+                                        <div class="d-grid gap-2 mx-auto">
+                                            <button class="btn btn-primary btn-cci" type="button" id="btn2">Get OTP</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="Verificationcode" role="tabpanel" aria-labelledby="Verification code">
+                                <div class="offset-lg-3 offset-md-2 col-lg-6 col-md-8 bg-white commonradius mt-5">
+                                    <div class="p-4">
+                                        <div>
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <p class="mb-1">We have sent you a 6 digit OTP on 987654321</p>
+                                                <small>06:00</small>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="text-center">
+                                                <div id="otp" class="inputs d-flex flex-row justify-content-center mt-2">
+                                                    <input class="m-2 ms-0 text-center form-control rounded" type="text" id="first" maxlength="1" />
+                                                    <input class="m-2 text-center form-control rounded" type="text" id="second" maxlength="1" />
+                                                    <input class="m-2 text-center form-control rounded" type="text" id="third" maxlength="1" />
+                                                    <input class="m-2 text-center form-control rounded" type="text" id="fourth" maxlength="1" />
+                                                    <input class="m-2 text-center form-control rounded" type="text" id="fifth" maxlength="1" />
+                                                    <input class="m-2 me-0 text-center form-control rounded" type="text" id="sixth" maxlength="1" />
+                                                </div>
+                                                <div>
+                                                    <button type="button" class="btn btn-link lnk-btn-cci">Resend OTP</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-grid gap-2 mx-auto">
+                                            <button class="btn btn-primary btn-cci" type="button">Verify</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="Personalinformation" role="tabpanel" aria-labelledby="Personal-information">
+                                <div class="offset-lg-3 offset-md-2 col-lg-6 col-md-8 bg-white commonradius mt-5">
+                                    <div class="p-4">
+                                        <div class="mb-3">
+                                            <input id="name" name="name" type="text" placeholder="Name" class="form-control" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <input id="email" name="email" type="text" placeholder="Email" class="form-control" />
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault"> I accept the privacy policy</label>
+                                        </div>
+                                        <div class="d-grid gap-2 mx-auto">
+                                            <button class="btn btn-primary btn-cci" type="button" id="btn2">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 d-md-none d-lg-block">
+                    <div class="row">
+                        <div class="col-sm-4 col-lg-12">
+                            <div class="">
+                                <div class="d-md-block d-sm-block d-lg-none pt-4">
+                                    <h4>Select Date</h4>
+                                    <br/>
+                                    <input type="date" id="birthday" name="birthday" class="col-12 form-control">
+                                </div>
+                                <div class="d-lg-block d-none">
+                                    <div id="inline_cal"></div>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-lg-12 pt-4">
+                            <div class="chartbox">
+                                <div class="">
+                                    <h4>Weekly chart</h4>
+                                    <span>15 Sep 2021 -25 Sep 2021</span>
+                                    <div class="pt-2">
+                                        <canvas id="barChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-lg-12 pt-4">
+                            <div class="chartbox">
+                                <div class="">
+                                    <h4>Monthly chart</h4>
+                                    <span>2021</span>
+                                    <div class="pt-4">
+                                        <canvas id="myChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-md-block d-sm-block d-lg-none pt-4"></div>
+                                
+            </div>
+        </div>
+    </div>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>    
+    <script type="text/javascript" src="js/charts/popper.min.js"></script>
+    <script type="text/javascript" src="js/charts/mdb.js"></script>
+    <script src="js/phoneflag/intlTelInput.js"></script>
+    <script src="js/phoneflag/phoneflaginput.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/customscript.js"></script>
+    <script src="js/calender/jquery-3.3.1.min.js"></script>
+    <script src="js/calender/rome.js"></script>
+    <script src="js/calender/main.js"></script>
+</body>
+</html>
