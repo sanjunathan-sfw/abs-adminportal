@@ -258,8 +258,51 @@ input
       color: #BBC5D5 !important;
       font-weight: bold;
       transition: none !important;  
+  }
+  #table_timeslots tr, td
+  {
+      border-bottom: 0px !important;
+  }
+  #table_timeslots td
+  {
+      padding: 2%;      
+      -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
   }  
+  #table_timeslots td:hover
+  {
+      background: #EBF2F7;
+  }
+  #table_timeslots td.booked
+  {
+      background: #E1140A;
+  }
+  #table_timeslots td.booked .timehead, .abtnactive
+  {
+      color: white ;
+  }
+  #table_timeslots .timehead
+  {
+      border-bottom: 1px #D4D4D4 solid;
+  }
+  #table_timeslots .btnbooknow a
+  {
+      color:#3E8DDD;
+      text-decoration: none;
+  }
  
+  .btnback
+  {
+      text-decoration: none;
+  }
+  .warrantybox .form-check-input
+  {
+      margin-top: 4px !important;
+  }
+  .btn-success {
+    background: #6AC346;
+    border: 0px;
 @media (min-width: 250px)
 {
     .logo_wrapper 
