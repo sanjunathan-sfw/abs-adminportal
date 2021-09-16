@@ -57,16 +57,11 @@
             </nav>
         </div>
         <div class="container">
-            <div class="row no-gutters pt-5">
-                <div class="col-lg-3 col-sm-12 order-sm-1 order-lg-2 d-md-none d-lg-block">
+            <div class="row no-gutters pt-3 mb-4">
+                <div class="col-lg-3 col-sm-12 d-none tab-none order-sm-1 order-lg-2 d-md-none d-lg-block tab-none">
                     <div class="row">
                         <div class="col-sm-4 col-lg-12">
                             <div class="">
-                                <div class="d-md-block d-sm-block d-lg-none pt-4">
-                                    <h4>Select Date</h4>
-                                    <br/>
-                                    <input type="date" id="birthday" name="birthday" class="col-12 form-control">
-                                </div>
                                 <div class="d-lg-block d-none">
                                     <div id="inline_cal"></div>
                                 </div>                                
@@ -96,23 +91,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-md-block d-sm-block d-lg-none pt-4"></div>
-                <div class="col-lg-9 col-sm-12 order-sm-2 order-lg-1">
+                <div class="col-lg-9 col-sm-12 order-sm-2 col-md-12 order-lg-1">
                     <div class="adminmaintitle">
                         <h3>Booking List</h3>
                         <span class="titlemsg">Manage Bookings</span>
                     </div>                    
-                    <div class="dashboardcards">                        
-                        <div class="row">
-                            <div class="pt-3 col-sm-3 offset-lg-9">
-                                <select class="form-select" aria-label="Default select example">
+                    <div class="dashboardcards"> 
+                        <div class="d-flex bd-highlight">
+                            <div class="me-auto p-2 bd-highlight">
+                                <div class="d-md-block d-sm-block tab-block d-lg-none ">
+                                    <input type="date" id="birthday" name="birthday" class="form-control">
+                                </div>
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <select class=" form-select " aria-label="Default select example">
                                     <option selected>Select</option>
                                     <option value="1">Current week view</option>
                                     <option value="2">Next week view</option>
                                     <option value="3">Monthly view</option>
                                   </select>
                             </div>
-                        </div>
+                          </div>                     
                         <div class="pagesubtitle pt-3">
                             <div class="d-flex justify-content-between">
                                 <div class="bd-highlight">

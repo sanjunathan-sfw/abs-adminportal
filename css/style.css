@@ -303,6 +303,7 @@ input
   .btn-success {
     background: #6AC346;
     border: 0px;
+  }
 @media (min-width: 250px)
 {
     .logo_wrapper 
@@ -340,22 +341,54 @@ input
     input#phone {
         padding-left: 16% !important;
     }
+    #navbar_top .container
+    {
+        margin-left: 0px !important;
+    }
 }
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
     input#phone {
         padding-left: 10% !important;
     }
+    #navbar_top .container
+    {
+        margin-left: auto !important;
+    }
 }
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
     input #phone {
         padding-left: 10% !important;        
+    }
+    #navbar_top .container
+    {
+        margin-left: auto !important;
     }
 }
 @media (min-width: 1024px) and (max-width: 1366px)
 {
     input#phone {
         padding-left: 16% !important;
+    }
+    #navbar_top li.active
+    {
+        padding-bottom: 4px;
+    }
+    #navbar_top ul li a
+    {
+        font-size: 14.2px;
+    }
+    .col-md-12
+    {
+        width: 100%;
+    }
+    .tab-none
+    {
+        display: none !important;
+    }
+    .tab-block
+    {
+        display: block !important;
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
