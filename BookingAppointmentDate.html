@@ -34,23 +34,23 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item ">
-                                <a class="nav-link" aria-current="page" href="#">Dashboard</a>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="dashboard.html">Dashboard</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Booking list</a>
+                                <a class="nav-link" href="BookingList.html">Booking list</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">New customer</a>
+                                <a class="nav-link" href="NewCustomer.html">New customer</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Book appointments</a>
+                                <a class="nav-link" href="BookingAppointments.html">Book appointments</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Configuration settings</a>
+                                <a class="nav-link" href="Configurationsettings.html">Configuration settings</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Logout</a>
+                                <a class="nav-link" href="index.html">Logout</a>
                             </li>
                         </ul>                        
                     </div>
@@ -119,6 +119,18 @@
             </div>
         </div>
     </div>    
+    <footer class="text-center text-lg-start">
+        <div class="container"> 
+            <div class="d-flex bd-highlight mb-3 mt-3">
+                <div class="me-auto p-2 bd-highlight">
+                    &copy; <script>document.write(new Date().getFullYear())</script> Lenovo. All rights reserved
+                </div>
+                <div class="p-2 bd-highlight">
+                    <small>Version : 0.0.1</small>
+                </div>
+            </div>
+        </div>        
+    </footer>   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>    
     <script type="text/javascript" src="js/charts/popper.min.js"></script>
     <script type="text/javascript" src="js/charts/mdb.js"></script>
@@ -141,18 +153,10 @@
         eventLimit: true, // allow "more" link when too many events
         events: [
           {
-            title: 'Booked',
-            start: '2021-09-01'
-          },
-          {
-            title: 'Booked',
-            start: '2021-09-13'
-          },
-          {
-            title: 'Booked',
-            start: '2021-09-23'
-          },
-          
+            title: 'Demo',
+            start: '2021-09-22',
+            url:'BookingAppointmentSlots.html'
+          },                    
         ]
       });
   
