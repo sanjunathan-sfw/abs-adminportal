@@ -10,7 +10,7 @@
   background-color: #fff;
   padding: 10px;
   text-align: center;
-  border: 1px #0D6EFD solid;
+  border: 1px #3E8DDD solid;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
@@ -67,7 +67,7 @@
 .rd-time-selected,
 .rd-time-option:hover {
   cursor: pointer;
-  background-color: #0D6EFD;
+  background-color: #3E8DDD;
   color: #fff;
   /* new */
   border-radius: 60%;

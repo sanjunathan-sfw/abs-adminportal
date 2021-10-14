@@ -1,0 +1,140 @@
+.step-app > .step-steps {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.step-app > .step-steps > li {
+  list-style: none;
+  display: inline-block;
+  flex: 1;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  color: #333;
+  background-color: #e5e5e5;  
+  text-decoration: none;
+  border-right: 1px solid #fff;
+}
+.step-steps li {
+  background: #efefef;
+  display: inline-block;
+  outline: none;
+  padding: 10px 40px 10px;
+  position: relative;
+  text-decoration: none;
+}
+.step-steps li:before {
+  width: 0;
+  height: 0;
+  border-top: 30px inset transparent;
+  border-bottom: 30px inset transparent;
+  border-left: 0px solid #fff;
+  border-left: 11px  inset transparent;  
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+}
+.step-steps li:before {
+  width: 0;
+  height: 0;
+  border-top: 30px inset transparent;
+  border-bottom: 30px inset transparent;
+  border-left: 0px solid #fff;
+  border-left: 11px  inset transparent;  
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  
+}
+
+.step-steps li:after {
+  width: 0;
+  height: 0;
+  border-top: 30px inset transparent;
+  border-bottom: 30px inset transparent;
+  
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -11px;
+  z-index: 2;
+}
+
+.step-steps li:first-child:before,
+.step-steps li:last-child:after {
+  border: none;
+}
+
+.step-steps li.active:after {
+  border-left: 11px solid #3E8DDD;  
+}
+.step-app > .step-steps > li a{
+  color: black;
+}
+.step-app > .step-steps > li:hover {
+  background-color: #ddd;
+}
+.step-app > .step-steps > li:last-child a {
+  border: none;
+}
+.step-app > .step-steps > li.active {
+  background-color: #3E8DDD;
+  color: #fff;
+  font-weight: 600;
+}
+.step-app > .step-steps > li.active a{
+  color: #fff;
+}
+.step-app > .step-steps > li.error {
+  background-color: #e7505a;
+  color: #fff;
+}
+.step-app > .step-steps > li.done {
+  background-color: #6AC346;
+  color: #fff;  
+  font-weight: 600;
+}
+.step-app > .step-steps > li.done a{
+  color: #fff;
+}
+.step-app > .step-steps > li > .number {
+  background: #fff;
+  padding: 0 8px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 15px;
+  border-radius: 3px;
+  color: #333;
+}
+.step-app > .step-content {
+  
+  padding: 10px;
+  border-top: 0;
+}
+.step-app > .step-content > .step-tab-panel {
+  display: none;
+}
+.step-app > .step-content > .step-tab-panel.active {
+  display: block;
+}
+.step-app > .step-footer {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: right;
+}
+.step-app > .step-footer > .step-btn {
+  padding: 4px 16px;
+  color: #333;
+  text-decoration: none;
+  background: #e5e5e5;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+

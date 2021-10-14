@@ -86,6 +86,10 @@ input
     padding:3% !important;
     
 }
+.btn-success
+{
+    background-color: #6AC346 !important;
+}
 .form-check-input {
     padding: 0 !important;
     margin-top:9px;
@@ -114,7 +118,7 @@ input
   
   /* Add a grey background color on mouse-over */
   #navbarSupportedContent a:hover {
-    color:#0D6EFD;
+    color:#3E8DDD;
   }
   .navbar-light .navbar-toggler
   {
@@ -123,19 +127,19 @@ input
 
   #navbar_top li.active
   {
-      border-bottom: 2px #0D6EFD solid;
+      border-bottom: 2px #3E8DDD solid;
   }
   #navbar_top li.active a
   {
-      color: #0D6EFD;      
+      color: #3E8DDD;      
   }
   #navbar_top li:hover
   {
-      border-bottom: 2px #0D6EFD solid;
+      border-bottom: 2px #3E8DDD solid;
   }
   #navbar_top li a:hover
   {
-      color: #0D6EFD;
+      color: #3E8DDD;
   }
   .adminmaintitle h3
   {
@@ -159,7 +163,12 @@ input
     text-decoration:underline;
     text-decoration-thickness: 3px;  
     text-underline-offset: 0.6em;
-    text-decoration-color:#0D6EFD;
+    text-decoration-color:#3E8DDD;
+  }
+  .dashboardcards a.dashcards, h5.card-title
+  {
+    text-decoration: none !important;
+    color: #333 !important;
   }
   .dashboardcards .card
   {
@@ -199,7 +208,23 @@ input
   a.text-underlinenone
   {
       text-decoration: none;
-      font-weight: bold;
+      
+  }
+  a.text-underlinenone:hover
+  {
+      text-decoration: underline;
+      color: #3E8DDD;
+      
+  }
+  .adminportaltable a.listview 
+  {
+      color: #212529;
+      text-decoration: none;
+  }
+  .adminportaltable tr:hover a
+  {
+      color: white;
+      text-decoration: none;
   }
   .adminportaltable
   {
@@ -268,7 +293,7 @@ input
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 0.7em;
-    text-decoration-color: #0D6EFD;
+    text-decoration-color: #3E8DDD;
     border: 0 !important;
     background: none !important;
 
@@ -330,6 +355,13 @@ input
     background: #6AC346;
     border: 0px;
   }
+  .form-control:focus,
+  input:focus,
+  button:focus,
+  select:focus
+  {
+    box-shadow: none !important;
+    }
 @media (min-width: 250px)
 {
     .logo_wrapper 
@@ -345,6 +377,14 @@ input
     .logo_wrapper .navbar-brand
     {
         border-bottom: 0 !important;
+    }
+    .nav-link .d-sm-block
+    {
+        display: block !important;
+    }
+    .tab-content .d-sm-block
+    {
+        display: block !important;
     }
 }
 @media (min-width: 350px)
@@ -375,12 +415,18 @@ input
     {
         margin-left: 0px !important;
     }
+    .nav-link .d-sm-block
+    {
+        display: none !important;
+    }
+    .tab-content .d-sm-block
+    {
+        display: none !important;
+    }
 }
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
-    input#phone {
-        padding-left: 10% !important;
-    }
+    
     #navbar_top .container
     {
         margin-left: auto !important;
@@ -389,6 +435,21 @@ input
     {
         line-height: 25px !important;
     }
+    .navbar
+{
+    border-bottom: 1px #C7C7C7 solid;
+    padding:0px;    
+    background: #fff !important;    
+    line-height: 22px !important;    
+}
+.rd-day-body {
+    cursor: pointer;
+    text-align: center;
+    line-height: 0;
+    width: 30px !important;
+    height: 30px !important;
+}
+    
 }
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
     input #phone {
@@ -398,13 +459,27 @@ input
     {
         margin-left: auto !important;
     }
-    
+    .navbar
+{
+    border-bottom: 1px #C7C7C7 solid;
+    padding:0px;    
+    background: #fff !important;    
+    line-height: 25px !important;    
 }
-@media (min-width: 1024px) and (max-width: 1366px)
+.rd-day-body {
+    cursor: pointer;
+    text-align: center;
+    line-height: 0;
+    width: 45px !important;
+    height: 45px !important;
+}
+}
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape)
 {
     input#phone {
         padding-left: 16% !important;
     }
+    
     #navbar_top li.active
     {
         padding-bottom: 4px;
@@ -425,13 +500,28 @@ input
     {
         display: block !important;
     }
+    .tablandisblock
+    {
+        display: block !important;        
+    }    
+}
+@media (min-width: 1366px) 
+{
+    .dashboardcards h5.card-title
+    {
+        font-size: 14px !important;
+        
+    }
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
 {
     input#phone {
         padding-left: 16% !important;
     }
-    
+    .tablandisblock
+    {
+        display: block !important;
+    }
 }
 .box {
     float: left;
@@ -446,3 +536,19 @@ input
   .red {
     background-color: red;
   }
+.form-select {
+    background-color: #fff !important;
+    background: red url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%233E8DDD' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.form-select option {
+        border: 1px red solid !important;
+    }

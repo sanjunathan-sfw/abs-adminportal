@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,14 +57,14 @@
         </div>
         <div class="container">
             <div class="row no-gutters pt-3">
-                <div class="col-lg-9 col-md-12 col-sm-12">
+                <div class="col-lg-9 col-sm-12">
                     <div class="adminmaintitle">
                         <h3>Dashboard</h3>
                         <span class="titlemsg">Welcome back!</span>
                     </div>
                     <div class="">
                         <div class="mb-4">
-                            <div class="d-md-block d-sm-block d-lg-none tab-block pt-4">
+                            <div class="d-md-block d-sm-block d-lg-none tab-none pt-4">
                                 <h4>Select Date</h4>
                                 <input type="date" id="birthday" name="birthday" class="col-12 form-control">
                             </div>                                                         
@@ -77,36 +76,45 @@
                     <div class="dashboardcards">
                         <div class="row">
                             <div class="col-sm-3 pt-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Total bookings</h5>
-                                        <h2 class="card1">20,445</h2>
+                                <a href="BookingList.html" class="dashcards">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Total bookings</h5>
+                                            <div class="d-md-block d-sm-block d-lg-none tablandisblock"><br/></div>
+                                            <h2 class="card1">20,445</h2>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-sm-3 pt-4">
+                                <a href="BookingList.html" class="dashcards">
                                 <div class="card">
                                     <div class="card-body">
                                         <h5 class="card-title">Ongoing appointments</h5>
                                         <h2 class="card5">120</h2>
                                     </div>
                                 </div>
+                                </a>
                             </div>
                             <div class="col-sm-3 pt-4">
+                                <a href="BookingList.html" class="dashcards">
                                 <div class="card">
                                     <div class="card-body">
                                         <h5 class="card-title">Completed appointments</h5>
                                         <h2 class="card2">89</h2>
                                     </div>
                                 </div>
+                            </a>
                             </div>
                             <div class="col-sm-3 pt-4">
+                                <a href="BookingList.html" class="dashcards">
                                 <div class="card">
                                     <div class="card-body">
                                         <h5 class="card-title">Cancelled bookings</h5>
                                         <h2 class="card3">30</h2>
                                     </div>
                                 </div>
+                            </a>
                             </div>
                         </div>
                         <div class="row">
@@ -147,7 +155,7 @@
                                     <tbody>
                                         <tr>
                                             <td>01</td>
-                                            <td>Amanda Chavez</td>
+                                            <td><a href="BookingDetails.html" class="listview">Amanda Chavez</a></td>
                                             <td>Laptop service</td>
                                             <td>25 Sep 2021</td>
                                             <td>11:00 - 12:00</td>
@@ -215,9 +223,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-12 col-sm-12">
+                <div class="col-lg-3 col-sm-12">
                     <div class="row">
-                        <div class="d-lg-block d-none tab-none col-sm-4 col-lg-12 pt-4">
+                        <div class="d-lg-block d-none col-sm-4 col-lg-12 pt-4">
                             <div class="">
                                 <div id="inline_cal"></div>
                             </div>   

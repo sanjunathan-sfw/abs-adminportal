@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-    <title>My account | Lenovo India -Sanjunathan</title>
+    <title>My account | Lenovo India</title>
     <link rel="shortcut icon" type="image/x-icon" media="all" href="images/favicon.ico" />
     <meta name="description" content="Login/Register">
     <meta name="author" content="Lenovo">
@@ -58,71 +58,60 @@
         </div>
         <div class="container">
             <div class="row no-gutters pt-3 mb-4">
-                <div class="col-lg-3 col-sm-12 d-none tab-none order-sm-1 order-lg-2 d-md-none d-lg-block tab-none">
-                    <div class="row">
-                        <div class="col-sm-4 col-lg-12">
-                            <div class="">
-                                <div class="d-lg-block d-none">
-                                    <div id="inline_cal"></div>
-                                </div>                                
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-lg-12 pt-4">
-                            <div class="chartbox">
-                                <div class="">
-                                    <h4>Weekly chart</h4>
-                                    <span>15 Sep 2021 -25 Sep 2021</span>
-                                    <div class="pt-2">
-                                        <canvas id="barChart"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-lg-12 pt-4">
-                            <div class="chartbox">
-                                <div class="">
-                                    <h4>Monthly chart</h4>
-                                    <span>2021</span>
-                                    <div class="pt-4">
-                                        <canvas id="myChart"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-9 col-sm-12 order-sm-2 col-md-12 order-lg-1">
+                <div class="col-lg-9 col-sm-12">
                     <div class="adminmaintitle">
                         <h3>Booking List</h3>
                         <span class="titlemsg">Manage Bookings</span>
-                    </div>                    
+                    </div>
                     <div class="dashboardcards"> 
-                        <div class="d-flex bd-highlight">
-                            <div class="me-auto p-2 bd-highlight">
-                                <div class="d-md-block d-sm-block tab-block d-lg-none ">
+                        <div class="row">
+                            <div class="col-sm-3 mb-2 mt-2">
+                                <!--<div class="d-md-block d-sm-block tab-block d-lg-none">
+                                    <label>Search by date</label>
                                     <input type="date" id="birthday" name="birthday" class="form-control">
-                                </div>
+                                </div>-->
+                                <label>From</label>
+                                <input type="date" id="birthday" name="birthday" class="form-control">
                             </div>
-                            <div class="p-2 bd-highlight">
+                            <div class="col-sm-3 mb-2 mt-2">
+                                <label>To</label>
+                                <input type="date" id="birthday" name="birthday" class="form-control">
+                            </div>
+                            <div class="col-sm-3 mb-2 mt-2">
+                                <label>Search by Status</label>
+                                <select class=" form-select " aria-label="Default select example">
+                                    <option selected>Select</option>
+                                    <option value="1">Ongoing</option>
+                                    <option value="2">Completed</option>                                    
+                                </select>
+                            </div>
+                            <div class="col-sm-3 mb-2 mt-2">
+                                <label>Search by week/month</label>
                                 <select class=" form-select " aria-label="Default select example">
                                     <option selected>Select</option>
                                     <option value="1">Current week view</option>
                                     <option value="2">Next week view</option>
                                     <option value="3">Monthly view</option>
-                                  </select>
+                                </select>
                             </div>
-                          </div>                     
+                        </div>                                            
                         <div class="pagesubtitle pt-3">
-                            <div class="d-flex justify-content-between">
-                                <div class="bd-highlight">
+                            <div class="d-flex bd-highlight">
+                                <div class=" pt-3 flex-grow-1 bd-highlight">
                                     <h3>Bookings</h3>
                                 </div>
-                                <!--<div class="bd-highlight">
-                                    <div class="ms-auto">
-                                        <a href="#" class="btn-link text-underlinenone">View all</a>    
-                                    </div>                            
-                                </div>-->
-                            </div>
+                                <div class="p-2 bd-highlight d-none d-lg-block d-md-block"><a href="#" class="btn-link text-underlinenone"><i class="fa fa-file-excel"></i> Download excel</a></div>
+                                <div class="p-2 bd-highlight d-none d-lg-block d-md-block"><a href="#" class="btn-link text-underlinenone"><i class="fa fa-file-csv"></i> Download csv</a></div>
+                                <div class="p-2 bd-highlight d-none d-lg-block d-md-block"><a href="#" class="btn-link text-underlinenone"><i class="fa fa-file-pdf"></i> Download PDF</a></div>
+                                <div class="bd-highlight d-sm-block d-md-none d-lg-none">
+                                    <select class=" form-select " aria-label="Default select example">
+                                        <option selected>Download List</option>
+                                        <option value="1">Download excel</option>
+                                        <option value="2">Download csv</option>
+                                        <option value="3">Download pdf</option>
+                                    </select>
+                                </div>
+                              </div>                            
                         </div>
                         <div class="pt-4">
                             <div class="table-responsive">
@@ -140,7 +129,7 @@
                                     <tbody>
                                         <tr>
                                             <td>01</td>
-                                            <td>Amanda Chavez</td>
+                                            <td><a href="BookingDetails.html" class="listview">Amanda Chavez</a></td>
                                             <td>Laptop service</td>
                                             <td>25 Sep 2021</td>
                                             <td>11:00 - 12:00</td>
@@ -208,6 +197,37 @@
                         </div>
                     </div>
                 </div>                
+                <div class="col-lg-3 col-sm-12">
+                    <div class="row">
+                        <div class="d-lg-block d-none col-sm-4 col-lg-12 pt-4">
+                            <div class="">
+                                <div id="inline_cal"></div>
+                            </div>   
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-12 pt-4">
+                            <div class="chartbox">
+                                <div class="">
+                                    <h4>Weekly chart</h4>
+                                    <span>15 Sep 2021 -25 Sep 2021</span>
+                                    <div class="pt-2">
+                                        <canvas id="barChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-12 pt-4">
+                            <div class="chartbox">
+                                <div class="">
+                                    <h4>Monthly chart</h4>
+                                    <span>2021</span>
+                                    <div class="pt-4">
+                                        <canvas id="myChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>    
