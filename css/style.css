@@ -327,7 +327,8 @@ input
   }
   #table_timeslots td.booked
   {
-      background: #E1140A;
+      border:1px solid #E1140A;
+      border-collapse: separate !important;
   }
   #table_timeslots td.booked .timehead, .abtnactive
   {
